@@ -59,9 +59,9 @@ public class Snack {
         double total = quantity * this.cost;
         return total;
     }
-
     @Override
     public String toString() {
-        return "Snack: " + name + " " + "Quantity: " + quantity + " Price:" + cost;
+        return "Quantity of snack " + id + " is " + quantity;
     }
 }
+// Quantity of snack 4 is 21
