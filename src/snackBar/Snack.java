@@ -47,13 +47,11 @@ public class Snack {
     }
 
     //other methods
-    public int addQuantity(int quantity) {
+    public void addQuantity(int quantity) {
         this.quantity = this.quantity + quantity;
-        return this.quantity;
     }
-    public String buySnack(int quantity) {
+    public void buySnack(int quantity) {
         this.quantity = this.quantity - quantity;
-        return this.quantity + " snacks left.";
     }
     public double totalCost(int quantity) {
         double total = quantity * this.cost;
@@ -64,4 +62,3 @@ public class Snack {
         return "Quantity of snack " + id + " is " + quantity;
     }
 }
-// Quantity of snack 4 is 21
