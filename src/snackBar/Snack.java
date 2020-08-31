@@ -57,6 +57,10 @@ public class Snack {
         double total = quantity * this.cost;
         return total;
     }
+    public String snackState(String vname) {
+        return "Snack: " + name + "\n" + "Vending Machine: " + vname + "\n" + "Quantity: " + quantity + "\n" + "Total Cost: " + (cost * quantity) + "\n";
+    }
+
     @Override
     public String toString() {
         return "Quantity of snack " + id + " is " + quantity;
